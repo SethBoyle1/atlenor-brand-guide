@@ -1,0 +1,293 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="robots" content="noindex,nofollow"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Atlenor Brand Guide</title>
+<link rel="icon" href="04-app-and-icons/web-favicons/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#04070f;--panel:#070d1c;--card:#0b1322;--line:#18233a;--text:#e9eef8;--mute:#93a2bc;--soft:#c6d0e2;--silver:#c3cddb;--ice:#9cc4ff;--gold:#f2d27a;--bad:#f0997b;--good:#5dcaa5}
+*{box-sizing:border-box}html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--text);font:16px/1.6 Geist,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;-webkit-font-smoothing:antialiased}
+img,video{display:block;max-width:100%;height:auto}
+.mono,code{font-family:"Geist Mono",ui-monospace,SFMono-Regular,Menlo,monospace}code{font-size:.88em;color:var(--soft)}
+.cover{position:relative;border-bottom:1px solid var(--line)}.cover img{width:100%;aspect-ratio:2400/825;object-fit:cover}
+.cover .tag{position:absolute;left:32px;bottom:22px;font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--mute)}
+.wrap{max-width:1200px;margin:0 auto;padding:0 32px 96px}
+h1{font-size:clamp(36px,5.4vw,64px);line-height:1.02;margin:64px 0 0;font-weight:600;letter-spacing:-.03em}
+h2{margin:0 0 8px;font-size:clamp(28px,3.4vw,40px);font-weight:600;letter-spacing:-.02em;line-height:1.1}
+h3{margin:0 0 8px;font-size:17px;font-weight:600}
+.lede{max-width:800px;color:var(--soft);font-size:19px;margin:18px 0 0}
+.sub{margin:0 0 24px;color:var(--mute);max-width:780px}
+section{padding-top:96px;scroll-margin-top:12px}
+.num{font-size:12px;letter-spacing:.16em;color:var(--silver);margin:0 0 10px;text-transform:uppercase}
+.toc{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:4px 20px;margin-top:36px;padding:22px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);counter-reset:t}
+.toc a{color:var(--soft);text-decoration:none;font-size:15px;padding:4px 0;counter-increment:t}.toc a::before{content:counter(t,decimal-leading-zero) "  ";color:var(--mute);font-family:"Geist Mono",monospace;font-size:12px}.toc a:hover{color:#fff}
+.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}.g2{grid-template-columns:repeat(2,minmax(0,1fr))}.g4{grid-template-columns:repeat(4,minmax(0,1fr))}.g5{grid-template-columns:repeat(5,minmax(0,1fr))}
+figure{margin:0;min-width:0}figcaption{font-size:13px;color:var(--mute);margin-top:8px}figcaption b{color:var(--soft)}
+.tb{border-radius:14px;border:1px solid var(--line);height:210px;display:grid;place-items:center;padding:28px;overflow:hidden;background:var(--bg)}.tb>img{width:100%;height:150px;object-fit:contain}
+.lt .tb{background:#fff;border-color:#dde3ee}.gr .tb{background:#9aa1ab;border-color:#9aa1ab}
+.shot{width:100%;border-radius:14px;border:1px solid var(--line)}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:22px}.card p{margin:0 0 8px;color:var(--soft);font-size:15px}.card ul{margin:0;padding-left:18px;color:var(--soft);font-size:15px}.card li{margin:5px 0}
+.story{background:linear-gradient(120deg,#101a30,#070d1c);border:1px solid #223150;border-radius:16px;padding:30px}.story .q{font-size:clamp(21px,2.8vw,30px);line-height:1.3;margin:0 0 20px;font-weight:500}
+.pill{display:inline-block;font-size:11px;letter-spacing:.08em;text-transform:uppercase;border:1px solid #2a3a5c;color:var(--silver);border-radius:999px;padding:2px 10px;margin-bottom:8px}
+.pill.main{background:#e9eef8;color:#04070f;border-color:#e9eef8}
+.anat{position:relative;border:1px solid var(--line);border-radius:16px;background:var(--bg);padding:56px 40px 70px}.anat img{width:100%}
+.anat .lb{position:absolute;font-size:12px;color:var(--ice);font-family:"Geist Mono",monospace;white-space:nowrap}.anat .lb::before{content:"";position:absolute;left:50%;width:1px;background:#4c86ff}
+.anat .t{top:14px}.anat .t::before{top:20px;height:28px}.anat .b{bottom:14px}.anat .b::before{bottom:20px;height:30px}
+.space{border:1px solid var(--line);border-radius:14px;padding:44px;background:var(--bg);display:flex;align-items:center}.space .zone{flex:1;position:relative;border:1px dashed #4c86ff;padding:7.5%}.space .zone::before{content:"½ O";position:absolute;top:4px;left:8px;font:12px "Geist Mono",monospace;color:#7fa6ff}
+.dont{position:relative}.dont .tb{background:var(--bg)}.dont .x{position:absolute;top:10px;right:10px;width:26px;height:26px;border-radius:50%;background:var(--bad);color:#04070f;display:grid;place-items:center;font-weight:700;font-size:15px}
+.sw{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:12px}.chip{border:1px solid var(--line);border-radius:12px;overflow:hidden;background:var(--panel)}.chip i{display:block;height:92px}.chip div{padding:12px 14px;font-size:14px}.chip b{display:block;font-weight:600}.chip span{color:var(--mute);font-size:12.5px;display:block}
+.chromebar{height:92px;background:linear-gradient(180deg,#ffffff,#e3eaf5 20%,#8d9bb2 43%,#283247 49.5%,#141a27 50.5%,#5d7398 56%,#c7d6ee 80%,#f6f9ff)}
+.ratio{display:flex;height:22px;border-radius:999px;overflow:hidden;border:1px solid var(--line)}.ratio i{display:block}
+.type{display:grid;grid-template-columns:1.3fr 1fr;gap:14px}.spec{font-size:clamp(40px,6vw,76px);line-height:1;font-weight:600;letter-spacing:-.03em;margin:4px 0 16px}
+table.t{width:100%;border-collapse:collapse;background:var(--panel);border:1px solid var(--line);border-radius:14px;overflow:hidden}.t td,.t th{padding:12px 14px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:15px}.t th{color:var(--mute);font-weight:500;font-size:12px;text-transform:uppercase;letter-spacing:.08em}.t tr:last-child td{border-bottom:0}
+.icons{display:flex;gap:22px;align-items:flex-end;flex-wrap:wrap;padding:28px;border-radius:14px;background:#1a2540;border:1px solid #26344f}.ic{display:flex;flex-direction:column;align-items:center;gap:8px}.ic em{font-style:normal;font-size:12px;color:var(--mute)}
+.video{border-radius:16px;overflow:hidden;border:1px solid var(--line);background:#000}
+.files li{margin:8px 0;color:var(--soft)}.files{padding-left:18px}
+.callout{border:1px solid #2a3a5c;background:linear-gradient(120deg,#0d1730,#070d1c);border-radius:14px;padding:22px 24px;display:flex;gap:18px;align-items:center;justify-content:space-between;flex-wrap:wrap}.callout p{margin:0;color:var(--soft)}
+.btn{display:inline-block;background:#e9eef8;color:#04070f;border-radius:999px;padding:9px 18px;font-size:14px;font-weight:600;text-decoration:none;white-space:nowrap}
+.foot{margin-top:56px;color:var(--mute);font-size:13px;border-top:1px solid var(--line);padding-top:20px}
+@media (max-width:1000px){.g5{grid-template-columns:repeat(3,minmax(0,1fr))}.sw{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media (max-width:900px){.grid,.g4{grid-template-columns:repeat(2,minmax(0,1fr))}.type{grid-template-columns:minmax(0,1fr)}.toc{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:600px){.wrap{padding:0 16px 64px}.cover .tag{left:16px;bottom:8px;font-size:10px}.grid,.g2,.g4,.g5{grid-template-columns:minmax(0,1fr)}.sw{grid-template-columns:repeat(2,minmax(0,1fr))}.tb{height:180px}.tb>img{height:124px}.story{padding:22px 18px}.space{padding:20px}.anat{padding:44px 12px 56px}.anat .lb{font-size:10px}.t td,.t th{padding:10px;font-size:14px}.toc{grid-template-columns:minmax(0,1fr)}section{padding-top:72px}}
+@media print{@page{size:11in 8.5in;margin:.35in}html{zoom:.56}body{-webkit-print-color-adjust:exact;print-color-adjust:exact}
+.wrap{max-width:none;padding:0 0 0}.cover img{max-height:6.4in}h1{margin-top:28px}.toc{grid-template-columns:repeat(5,minmax(0,1fr))}
+section{break-before:page;padding-top:0}.video{display:none}
+figure,.card,.icons,table,.story,.anat,.space,.callout,.chip,.tb,.shot,.grid>div{break-inside:avoid}
+.grid{grid-template-columns:repeat(3,minmax(0,1fr))!important}.g2{grid-template-columns:repeat(2,minmax(0,1fr))!important}.g4{grid-template-columns:repeat(4,minmax(0,1fr))!important}.sw{grid-template-columns:repeat(5,minmax(0,1fr))!important}
+#light .g2 .shot,#breakthrough .g2 .shot{max-height:5in;width:auto;margin:0 auto}
+#app>.shot,#digital>.shot,#embroidery>.shot,#environment>.shot,#logo>.shot{max-height:6.2in;width:auto;margin:0 auto}
+#apparel .grid{grid-template-columns:repeat(4,minmax(0,1fr))!important}
+#print .g2 .shot,#environment .g2 .shot,#digital .g2 .shot{max-height:4.6in;width:auto;margin:0 auto}
+#print figure .shot{max-height:4.6in;width:auto;margin:0 auto}}
+</style></head><body>
+<header class="cover"><img src="02-real-light-images/atlenor-signature-website-wide-2400x825.jpg" width="2400" height="825" alt="ATLENOR in mirror chrome with starlight in the O"><span class="tag">Brand guide · Version 1 · November 2026</span></header>
+<main class="wrap">
+<h1>Atlenor brand guide</h1>
+<p class="lede">Everything needed to use the Atlenor™ brand: the logo and its finishes, color, type, imagery and voice, plus how it shows up in the app, online, in print, on apparel and around the office.</p>
+<div class="callout" style="margin-top:28px"><p><b>Downloads:</b> the full brand kit, the embroidery pack for the shop, or this guide as a PDF.</p><div style="display:flex;gap:10px;flex-wrap:wrap"><a class="btn" href="Atlenor-Brand-Kit.zip" download>Brand kit (66 MB)</a><a class="btn" href="Atlenor-Embroidery-Pack.zip" download>Embroidery pack</a><a class="btn" href="Atlenor-Brand-Guide.pdf">Guide PDF</a></div></div>
+<nav class="toc" aria-label="Contents">
+<a href="#brand">Brand</a><a href="#story">Story</a><a href="#logo">Logo</a><a href="#anatomy">Anatomy</a><a href="#finishes">Finishes</a><a href="#light">Real light</a><a href="#breakthrough">Breakthrough effect</a><a href="#space">Space and size</a><a href="#misuse">Misuse</a><a href="#color">Color</a><a href="#type">Type</a><a href="#imagery">Imagery</a><a href="#voice">Voice and naming</a><a href="#app">App</a><a href="#digital">Web and social</a><a href="#print">Print</a><a href="#apparel">Apparel</a><a href="#embroidery">Embroidery</a><a href="#environment">Office, merch and signs</a><a href="#files">Files</a>
+</nav>
+
+<section id="brand"><p class="num">01 · Brand</p><h2>Calm, precise, in control</h2>
+<p class="sub">Atlenor makes the Atlenor Command Center™: one dashboard over a business's back-end systems. The brand should feel the way the product works.</p>
+<div class="grid">
+<div class="card"><h3>Calm</h3><p>Lots of dark space. One light source. Nothing shouts.</p></div>
+<div class="card"><h3>Precise</h3><p>Hand-drawn letters, exact spacing, real numbers. Every detail is deliberate.</p></div>
+<div class="card"><h3>In control</h3><p>The whole operation on one screen. The brand looks like it already has things handled.</p></div>
+</div></section>
+
+<section id="story"><p class="num">02 · Story</p><h2>One ring. One star.</h2>
+<div class="story"><p class="q">“Atlenor holds your whole operation together, and shows you which way is north.”</p>
+<div class="grid">
+<div><h3>ATL · the ring</h3><p style="margin:0;color:var(--soft)">From Atlas, who held everything together. The ring is the whole operation, held in one place.</p></div>
+<div><h3>NOR · the star</h3><p style="margin:0;color:var(--soft)">From the North Star, the fixed point you steer by. It sits at the center of the O.</p></div>
+<div><h3>The opening</h3><p style="margin:0;color:var(--soft)">The gap at the top of the ring is where the star breaks out and leads the way forward.</p></div>
+</div></div>
+<p class="sub" style="margin-top:14px">A book of maps is also called an atlas, which gives a second meaning: Atlenor maps the business. Tell the story in words only. Never use mythological figures or religious imagery.</p></section>
+
+<section id="logo"><p class="num">03 · Logo</p><h2>The logo</h2><p class="sub">Semibold ATLENOR, drawn by hand, with the ring and star as its O. Mirror chrome is the signature finish. In real-light images, the starlight stays inside the O, and its spikes end just past the ring.</p>
+<img class="shot" src="02-real-light-images/atlenor-signature-hero-1760x800.jpg" width="1760" height="800" alt="The signature logo with real starlight">
+<div class="grid" style="margin-top:14px">
+<figure><div class="tb"><img src="01-logo/mirror-chrome/atlenor-logo-all-chrome-on-dark.svg" alt="Primary logo"></div><figcaption><b>Primary logo.</b> Use this first, almost everywhere.</figcaption></figure>
+<figure><div class="tb"><img src="01-logo/mirror-chrome/atlenor-stacked-all-chrome-on-dark.svg" alt="Stacked logo"></div><figcaption><b>Stacked.</b> Square and tall spaces: signs, title slides, the back of a shirt.</figcaption></figure>
+<figure><div class="tb"><img src="01-logo/mirror-chrome/atlenor-mark-all-chrome-on-dark.svg" alt="The mark"></div><figcaption><b>The mark.</b> App icon, profile pictures, caps, sleeves, stickers.</figcaption></figure>
+</div></section>
+
+<section id="anatomy"><p class="num">04 · Anatomy</p><h2>How it's built</h2><p class="sub">Seven custom-drawn letters. The O is the mark: an open ring with a four-point star at its center, whose top point rises through the opening.</p>
+<div class="anat"><img src="01-logo/mirror-chrome/atlenor-logo-all-chrome-on-dark.svg" alt="Logo anatomy">
+<span class="lb t" style="left:72.6%">Opening</span><span class="lb b" style="left:62%">Ring · ATL</span><span class="lb b" style="left:73.4%">Star · NOR</span><span class="lb b" style="left:14%">Custom semibold letters</span></div>
+<div class="grid" style="margin-top:14px">
+<div class="card"><h3>Letters</h3><p>Semibold, wide and geometric, with angled cuts at the ends of strokes. They are not a font.</p></div>
+<div class="card"><h3>Ring</h3><p>About 8% of the O's width. It opens at the top by 18 degrees. The small mark has a thicker ring for small sizes.</p></div>
+<div class="card"><h3>Star</h3><p>Four points with curved sides. The top point is twice as long as the others and passes up through the opening.</p></div>
+</div></section>
+
+<section id="finishes"><p class="num">05 · Finishes</p><h2>One logo, six finishes</h2><p class="sub">The shapes never change. Only the finish does. Use mirror chrome unless there's a reason not to.</p>
+<div class="grid">
+<figure><div class="tb"><img src="01-logo/mirror-chrome/atlenor-logo-all-chrome-on-dark.svg" alt="Mirror chrome"></div><figcaption><span class="pill main">Main</span><br><b>Mirror chrome.</b> Website, app, decks, video and signs.</figcaption></figure>
+<figure><div class="tb"><img src="01-logo/straight-chrome/atlenor-logo-straight-chrome-on-dark.svg" alt="Straight chrome"></div><figcaption><span class="pill">Option</span><br><b>Straight chrome.</b> Softer silver with no dark bands. Good at small sizes.</figcaption></figure>
+<figure><div class="tb"><img src="01-logo/pure-chrome/atlenor-logo-pure-chrome-on-dark.svg" alt="Pure chrome"></div><figcaption><span class="pill">Option</span><br><b>Pure chrome.</b> Only silver, white and black, with no blue.</figcaption></figure>
+<figure><div class="tb"><img src="01-logo/gold/atlenor-logo-gold-on-dark.svg" alt="Gold"></div><figcaption><span class="pill">Accent</span><br><b>Gold ring.</b> Premium print, awards, invitations, gifts.</figcaption></figure>
+<figure><div class="tb"><img src="01-logo/ice-blue/atlenor-logo-ice-on-dark.svg" alt="Ice"></div><figcaption><span class="pill">Product</span><br><b>Ice ring.</b> Inside the dashboards, next to live data.</figcaption></figure>
+<figure><div class="tb"><img src="01-logo/one-color-black-and-white/atlenor-logo-one-color-white.svg" alt="One color white"></div><figcaption><span class="pill">Utility</span><br><b>One color.</b> White or black for embroidery, engraving, stamps, faxes and forms.</figcaption></figure>
+</div>
+<div class="grid" style="margin-top:14px">
+<figure class="lt"><div class="tb"><img src="01-logo/mirror-chrome/atlenor-logo-all-chrome-on-light.svg" alt="Mirror chrome on white"></div><figcaption>Mirror chrome on white: email, letters, documents</figcaption></figure>
+<figure class="lt"><div class="tb"><img src="01-logo/gold/atlenor-logo-gold-on-light.svg" alt="Deep gold on white"></div><figcaption>Deep gold on white</figcaption></figure>
+<figure class="lt"><div class="tb"><img src="01-logo/one-color-black-and-white/atlenor-logo-one-color-black.svg" alt="Black"></div><figcaption>One color, black</figcaption></figure>
+</div></section>
+
+<section id="light"><p class="num">06 · Real light</p><h2>The signature images</h2><p class="sub">Photographic renders of the chrome logo lit by its own star. Use them for big moments: the website hero, title slides, video, social headers and the lobby wall. For everything else, use the flat vector logo.</p>
+<div class="grid g2">
+<figure><img class="shot" src="02-real-light-images/atlenor-signature-phone-1080x1350.jpg" width="1080" height="1350" alt="Phone"><figcaption>Phone hero, 1080 × 1350</figcaption></figure>
+<figure><img class="shot" src="02-real-light-images/atlenor-signature-mark-1200.jpg" width="1200" height="1200" alt="Mark"><figcaption>The mark, 1200 × 1200</figcaption></figure>
+</div>
+<p class="sub" style="margin-top:14px">Each image also comes in a pure version, with no blue, in the same folder.</p></section>
+
+<section id="breakthrough"><p class="num">07 · Breakthrough effect</p><h2>The star breaks through</h2><p class="sub">A special-effects version where the star's light shoots up and out through the opening in the O. It's for launches, video intros, event screens and announcements. It is never the everyday logo.</p>
+<div class="video"><video src="03-star-breakthrough-effect/atlenor-logo-intro-1920x1080.mp4" poster="03-star-breakthrough-effect/atlenor-logo-intro-poster-1920x1080.jpg" autoplay muted loop playsinline controls width="1920" height="1080"></video></div>
+<p class="sub" style="margin-top:8px">Logo intro, 4.7 seconds: the star ignites, the chrome lights up, and the beam breaks out north. Also included as a GIF.</p>
+<div class="grid" style="margin-top:14px">
+<figure><img class="shot" src="03-star-breakthrough-effect/atlenor-breakthrough-hero-1760x800.jpg" width="1760" height="800" alt="Breakthrough hero"><figcaption>Hero, 1760 × 800</figcaption></figure>
+<figure><img class="shot" src="03-star-breakthrough-effect/atlenor-breakthrough-mark-1200.jpg" width="1200" height="1200" alt="Breakthrough mark"><figcaption>The mark, 1200 × 1200</figcaption></figure>
+<figure><div class="tb" style="height:auto;aspect-ratio:1"><img src="03-star-breakthrough-effect/atlenor-mark-breakthrough-mirror-chrome-on-dark.svg" alt="Vector breakthrough mark" style="height:80%"></div><figcaption>Vector: the star's top point rises far through the opening</figcaption></figure>
+</div>
+<div class="grid g2" style="margin-top:14px">
+<figure><img class="shot" src="03-star-breakthrough-effect/atlenor-breakthrough-story-1080x1920.jpg" width="1080" height="1920" alt="Story" style="max-height:640px;width:auto;margin:0 auto"><figcaption style="text-align:center">Story or reel, 1080 × 1920</figcaption></figure>
+<div class="card"><h3>When to use it</h3><ul><li>Product launches and announcements</li><li>Video intros and outros</li><li>Event screens and trade-show walls</li><li>Story and reel covers</li></ul><h3 style="margin-top:16px">When not to</h3><ul><li>Website header, app icon, documents and apparel. Use the standard logo.</li><li>Next to the standard logo on the same screen.</li><li>Below 600 pixels wide.</li></ul></div>
+</div></section>
+
+<section id="space"><p class="num">08 · Space and size</p><h2>Give it room</h2>
+<div class="grid g2">
+<div class="space"><div class="zone"><img src="01-logo/mirror-chrome/atlenor-logo-all-chrome-on-dark.svg" alt="Clear space"></div></div>
+<div class="card"><h3>Rules</h3><ul>
+<li>Clear space on every side: half the height of the O.</li>
+<li>Smallest full logo: 120 pixels wide on screen, 1 inch in print, 2.5 inches in embroidery.</li>
+<li>Smallest mark: 24 pixels. Below 32 pixels, use the small mark, which has a thicker ring.</li>
+<li>Real-light images: at least 600 pixels wide.</li>
+<li>Embroidery, engraving and foil: flat one- or two-color files only, never gradients.</li></ul></div>
+</div></section>
+
+<section id="misuse"><p class="num">09 · Misuse</p><h2>Don't do this</h2>
+<div class="grid g4">
+<figure class="dont"><div class="tb"><img src="01-logo/mirror-chrome/atlenor-logo-all-chrome-on-dark.svg" alt="Stretched" style="transform:scaleX(1.35) scaleY(.75)"></div><span class="x">×</span><figcaption>Stretch or squash it</figcaption></figure>
+<figure class="dont"><div class="tb"><img src="01-logo/mirror-chrome/atlenor-logo-all-chrome-on-dark.svg" alt="Rotated" style="transform:rotate(-12deg) scale(.85)"></div><span class="x">×</span><figcaption>Tilt or rotate it</figcaption></figure>
+<figure class="dont"><div class="tb"><img src="01-logo/mirror-chrome/atlenor-logo-all-chrome-on-dark.svg" alt="Recolored" style="filter:hue-rotate(110deg) saturate(6) sepia(.6)"></div><span class="x">×</span><figcaption>Recolor it</figcaption></figure>
+<figure class="dont"><div class="tb"><img src="01-logo/mirror-chrome/atlenor-logo-all-chrome-on-dark.svg" alt="Drop shadow" style="filter:drop-shadow(6px 6px 0 #f0997b)"></div><span class="x">×</span><figcaption>Add shadows, outlines or glows</figcaption></figure>
+<figure class="dont"><div class="tb" style="background:repeating-linear-gradient(45deg,#7b8aa6 0 18px,#c9a24a 18px 36px,#4b6b4f 36px 54px)"><img src="01-logo/mirror-chrome/atlenor-logo-all-chrome-on-dark.svg" alt="Busy background"></div><span class="x">×</span><figcaption>Place it on busy backgrounds</figcaption></figure>
+<figure class="dont lt"><div class="tb"><img src="01-logo/gold/atlenor-logo-gold-on-dark.svg" alt="Bright gold on white"></div><span class="x">×</span><figcaption>Use the dark-background version on white</figcaption></figure>
+<figure class="dont"><div class="tb"><div style="font:600 46px/1 Geist,sans-serif;letter-spacing:.1em;color:#e9eef8">ATLENOR</div></div><span class="x">×</span><figcaption>Retype the name in a font</figcaption></figure>
+<figure class="dont"><div class="tb"><div style="display:flex;gap:18px;align-items:center;width:100%"><img src="01-logo/mirror-chrome/atlenor-mark-all-chrome-on-dark.svg" alt="" style="width:22%;height:auto"><img src="01-logo/mirror-chrome/atlenor-logo-all-chrome-on-dark.svg" alt="Mark beside logo" style="width:70%;height:auto"></div></div><span class="x">×</span><figcaption>Put the mark beside the logo; the O already is the mark</figcaption></figure>
+</div></section>
+
+<section id="color"><p class="num">10 · Color</p><h2>Night and chrome</h2><p class="sub">Night navy is the base of everything. Chrome is the signature. Ice and gold are accents, used sparingly.</p>
+<div class="sw">
+<div class="chip"><i style="background:#04070f;border-bottom:1px solid #18233a"></i><div><b>Night navy</b><span class="mono">#04070F</span><span>RGB 4 7 15</span></div></div>
+<div class="chip"><i class="chromebar"></i><div><b>Mirror chrome</b><span class="mono">gradient</span><span>#FFFFFF → #283247 → #F6F9FF</span></div></div>
+<div class="chip"><i style="background:#e9eef8"></i><div><b>Text white</b><span class="mono">#E9EEF8</span><span>RGB 233 238 248</span></div></div>
+<div class="chip"><i style="background:#9cc4ff"></i><div><b>Ice</b><span class="mono">#9CC4FF</span><span>RGB 156 196 255</span></div></div>
+<div class="chip"><i style="background:#f2d27a"></i><div><b>Gold</b><span class="mono">#F2D27A</span><span>Deep gold #A87C16 on white</span></div></div>
+<div class="chip"><i style="background:#070d1c"></i><div><b>Panel</b><span class="mono">#070D1C</span></div></div>
+<div class="chip"><i style="background:#0b1322"></i><div><b>Card</b><span class="mono">#0B1322</span></div></div>
+<div class="chip"><i style="background:#93a2bc"></i><div><b>Muted text</b><span class="mono">#93A2BC</span></div></div>
+<div class="chip"><i style="background:#4c86ff"></i><div><b>Signal blue</b><span class="mono">#4C86FF</span><span>Links and focus</span></div></div>
+<div class="chip"><i style="background:linear-gradient(90deg,#5dcaa5 50%,#f0997b 50%)"></i><div><b>Status</b><span class="mono">#5DCAA5 · #F0997B</span><span>Dashboards only</span></div></div>
+</div>
+<div class="grid g2" style="margin-top:14px">
+<div class="card"><h3>Ratio</h3><div class="ratio"><i style="width:80%;background:#04070f"></i><i style="width:15%;background:linear-gradient(180deg,#fff,#8d9bb2,#283247,#c7d6ee)"></i><i style="width:3%;background:#9cc4ff"></i><i style="width:2%;background:#f2d27a"></i></div><p style="margin-top:10px">About 80% night navy, 15% chrome and text, and 5% ice or gold. The darkness is what makes the chrome shine.</p></div>
+<div class="card"><h3>In print</h3><p>Chrome on paper is best as metallic silver ink or foil, close to Pantone 877 C. Night navy is close to Pantone Black 6 C. Confirm both with the printer. Color codes for print, web and code are in <code>05-color/</code>.</p></div>
+</div></section>
+
+<section id="type"><p class="num">11 · Type</p><h2>Geist and Geist Mono</h2>
+<div class="type">
+<div class="card"><span class="pill">Geist</span><p class="spec">Run the whole operation.</p><p style="font-size:34px;font-weight:600;letter-spacing:-.02em;color:var(--text);margin:0 0 6px">Headline · Semibold 600</p><p style="font-size:20px;font-weight:500;color:var(--text)">Subhead · Medium 500</p><p>Body · Regular 400. Short sentences, plain words, one idea at a time.</p></div>
+<div class="card"><span class="pill">Geist Mono</span><p class="mono" style="font-size:38px;margin:6px 0 12px;color:var(--text)">$48,210</p><p class="mono">+12.4% · 63 / 63 · 06:00</p><p style="margin-top:12px">For numbers, data, labels and timestamps. Never for sentences.</p><p>Fallback when Geist isn't installed: Helvetica or Arial.</p></div>
+</div></section>
+
+<section id="imagery"><p class="num">12 · Imagery</p><h2>One star, one light source</h2>
+<div class="grid">
+<div class="card"><h3>Do</h3><ul><li>One star per image, in the O.</li><li>Deep navy space and fine star dust.</li><li>Real screenshots of the product, on navy.</li><li>Real photos of real customers and staff, with permission.</li></ul></div>
+<div class="card"><h3>Don't</h3><ul><li>Extra stars, lens flares, planets or galaxies.</li><li>Mythological figures, globes on shoulders or religious imagery.</li><li>AI images made to look like real places or people.</li><li>Stock photos of handshakes and people pointing at screens.</li></ul></div>
+<div class="card"><h3>Every star is ours</h3><p>All starlight and light effects in this kit were generated for Atlenor. Don't add stock light effects.</p></div>
+</div></section>
+
+<section id="voice"><p class="num">13 · Voice and naming</p><h2>Plain, confident, short</h2>
+<table class="t"><thead><tr><th>Say</th><th>Not</th></tr></thead><tbody>
+<tr><td>Every location, one screen.</td><td>A revolutionary, game-changing synergy platform.</td></tr>
+<tr><td>Sales are up 12% this week.</td><td>Your sales are absolutely crushing it!</td></tr>
+<tr><td>Atlenor AI flagged three late invoices.</td><td>Our AI genius found something amazing!</td></tr>
+</tbody></table>
+<table class="t" style="margin-top:14px"><thead><tr><th>Name</th><th>How to write it</th></tr></thead><tbody>
+<tr><td>The company</td><td>Atlenor. Use “Atlenor, LLC” only in legal and contract text. Never ATLENOR in running text: all caps is only for the logo.</td></tr>
+<tr><td>The product</td><td>Atlenor Command Center™. Use ™ on first mention.</td></tr>
+<tr><td>The AI</td><td>“Atlenor AI” in writing. Its button just says “Atlenor”, next to the star.</td></tr>
+<tr><td>Trademark</td><td>Use ™ until the trademark registers, never ®. Never say “patent pending”.</td></tr>
+</tbody></table></section>
+
+<section id="app"><p class="num">14 · App</p><h2>The app</h2><p class="sub">The chrome mark is the app icon. The app opens on a launch screen with the signature logo, then shows the flat chrome logo in its header and the star-plus-“Atlenor” AI button.</p>
+<img class="shot" src="08-placement-mockups/app-iphone-screens.png" alt="App launch screen, home screen icon and in-app dashboard">
+<p class="sub" style="margin-top:8px">Left to right: launch screen, home screen icon, in-app header and AI button. Numbers are sample data for layout only.</p>
+<div class="icons" style="margin-top:14px">
+<span class="ic"><img src="04-app-and-icons/ios/atlenor-ios-1024.png" width="140" height="140" alt="App icon" style="border-radius:31px"><em>App Store 1024</em></span>
+<span class="ic"><img src="04-app-and-icons/ios/atlenor-ios-180.png" width="90" height="90" alt="iPhone" style="border-radius:20px"><em>iPhone 180</em></span>
+<span class="ic"><img src="04-app-and-icons/android/atlenor-android-192.png" width="80" height="80" alt="Android"><em>Android 192</em></span>
+<span class="ic"><img src="04-app-and-icons/web-favicons/atlenor-chrome-social-profile-400.png" width="72" height="72" alt="Profile" style="border-radius:50%"><em>Profile</em></span>
+<span class="ic"><img src="04-app-and-icons/web-favicons/favicon-chrome-48.png" width="48" height="48" alt="Favicon 48"><em>48</em></span>
+<span class="ic"><img src="04-app-and-icons/web-favicons/favicon-chrome-32.png" width="32" height="32" alt="Favicon 32"><em>32</em></span>
+<span class="ic"><img src="04-app-and-icons/web-favicons/favicon-chrome-16.png" width="16" height="16" alt="Favicon 16"><em>16</em></span>
+</div>
+<div class="grid g4" style="margin-top:14px">
+<figure><img class="shot" src="04-app-and-icons/launch-screens/atlenor-launch-iphone-1179x2556.png" alt="iPhone launch screen"><figcaption>Launch screen, iPhone</figcaption></figure>
+<div class="card" style="grid-column:span 3"><h3>Included</h3><ul><li>Every iOS icon size from 20 to 1024, square, for Xcode.</li><li>Android icons from 48 to 512, plus adaptive foreground and background layers and a maskable icon.</li><li>Launch screens for iPhone, Android and iPad.</li><li>Web favicons, an SVG favicon, a web manifest and a ready-to-paste HTML snippet.</li></ul></div>
+</div></section>
+
+<section id="digital"><p class="num">15 · Web and social</p><h2>Online</h2>
+<img class="shot" src="08-placement-mockups/website-laptop.png" alt="Website on a laptop">
+<div class="grid g2" style="margin-top:14px">
+<figure><img class="shot" src="08-placement-mockups/social-profile.png" alt="Social profile"><figcaption>Company profile: chrome mark as the picture, signature banner as the header</figcaption></figure>
+<figure><img class="shot" src="08-placement-mockups/slides-and-video-call.png" alt="Slides and video call"><figcaption>Title slide, content slide and video-call background</figcaption></figure>
+</div>
+<div class="grid" style="margin-top:14px">
+<figure><img class="shot" src="07-templates/social/atlenor-linkedin-personal-banner-1584x396.jpg" alt="LinkedIn banner"><figcaption>LinkedIn banner, 1584 × 396</figcaption></figure>
+<figure><img class="shot" src="07-templates/social/atlenor-x-header-1500x500.jpg" alt="X header"><figcaption>X header, 1500 × 500</figcaption></figure>
+<figure><img class="shot" src="07-templates/video-call-and-slides/atlenor-video-call-background-1920x1080.jpg" alt="Video call background"><figcaption>Video-call background, 1920 × 1080</figcaption></figure>
+</div>
+<p class="sub" style="margin-top:12px">Also in <code>07-templates/social/</code>: Facebook cover, YouTube banner, LinkedIn company banner, square post, story, link preview and profile pictures.</p></section>
+
+<section id="print"><p class="num">16 · Print</p><h2>Cards, letters and email</h2>
+<div class="grid g2">
+<figure><img class="shot" src="08-placement-mockups/business-cards.png" alt="Business cards"><figcaption>Business cards: chrome mark front, logo and details back. Print-ready PDF with bleed in <code>07-templates/print/</code>.</figcaption></figure>
+<figure><img class="shot" src="08-placement-mockups/stationery.png" alt="Letterhead and envelope"><figcaption>Letterhead, envelope and notepad</figcaption></figure>
+</div>
+<figure style="margin-top:14px"><img class="shot" src="08-placement-mockups/email-signature.png" alt="Email signature"><figcaption>Email signature: name, title, the chrome logo on white, and contact details. Copy-and-paste HTML in <code>07-templates/email-signature/</code>.</figcaption></figure></section>
+
+<section id="apparel"><p class="num">17 · Apparel</p><h2>On clothing</h2><p class="sub">Dark garments, white letters, and a metallic silver O. Keep it understated: a left-chest logo or a small mark looks more premium than a giant chest print.</p>
+<div class="grid">
+<figure><img class="shot" src="09-apparel-mockups/polo-navy.png" alt="Navy polo"><figcaption><b>Polo, navy.</b> Left chest, 3.5 in, two threads.</figcaption></figure>
+<figure><img class="shot" src="09-apparel-mockups/quarter-zip-charcoal.png" alt="Quarter-zip"><figcaption><b>Quarter-zip, charcoal.</b> Left chest, 3.5 in.</figcaption></figure>
+<figure><img class="shot" src="09-apparel-mockups/hoodie-black-center.png" alt="Hoodie"><figcaption><b>Hoodie, black.</b> Center chest, 9 in.</figcaption></figure>
+<figure><img class="shot" src="09-apparel-mockups/tee-navy-left-chest.png" alt="Tee left chest"><figcaption><b>Tee, navy.</b> Left chest, 3.5 in.</figcaption></figure>
+<figure><img class="shot" src="09-apparel-mockups/tee-navy-back.png" alt="Tee back"><figcaption><b>Tee, back.</b> Stacked logo, 10 in.</figcaption></figure>
+<figure><img class="shot" src="09-apparel-mockups/tee-black-center-chest.png" alt="Tee center"><figcaption><b>Tee, black.</b> Center chest print, 10 in.</figcaption></figure>
+<figure><img class="shot" src="09-apparel-mockups/cap-navy-logo.png" alt="Cap logo"><figcaption><b>Cap, navy.</b> Front logo, 4.25 in.</figcaption></figure>
+<figure><img class="shot" src="09-apparel-mockups/cap-black-mark.png" alt="Cap mark"><figcaption><b>Cap, black.</b> Front mark, 1.9 in.</figcaption></figure>
+<figure><img class="shot" src="09-apparel-mockups/cap-white-logo.png" alt="Cap white"><figcaption><b>Cap, white with navy brim.</b> Navy thread.</figcaption></figure>
+<figure><img class="shot" src="09-apparel-mockups/beanie-black.png" alt="Beanie"><figcaption><b>Beanie, black.</b> Cuff logo, 3 in.</figcaption></figure>
+<figure><img class="shot" src="09-apparel-mockups/polo-white.png" alt="White polo"><figcaption><b>Polo, white.</b> Navy thread, left chest.</figcaption></figure>
+<figure><img class="shot" src="09-apparel-mockups/hoodie-heather-left-chest.png" alt="Heather hoodie"><figcaption><b>Hoodie, heather grey.</b> Navy thread, left chest.</figcaption></figure>
+</div>
+<p class="sub" style="margin-top:12px">Garment drawings show placement only. Printed tees can use the white or one-color files. Never print the real-light chrome images on fabric.</p></section>
+
+<section id="embroidery"><p class="num">18 · Embroidery</p><h2>For the embroidery shop</h2>
+<img class="shot" src="09-apparel-mockups/embroidery-closeup.png" alt="Embroidery close-up">
+<div class="grid g2" style="margin-top:14px">
+<div class="card"><h3>Threads</h3><ul><li><b>A, letters:</b> white</li><li><b>B, ring and star:</b> metallic silver, close to Pantone 877 C</li><li><b>Light garments:</b> navy-black #04070F, close to Pantone Black 6 C</li><li>At 2 inches or smaller, use one thread.</li></ul></div>
+<div class="card"><h3>Sizes</h3><ul><li>Left chest logo 3.5 in · mark 2 in</li><li>Center chest 9 in · full back 10 in</li><li>Cap front logo 4.25 in · mark 1.9 in</li><li>Sleeve, cap side, back of neck 1.25 in · beanie 3 in</li></ul></div>
+</div>
+<div class="callout" style="margin-top:14px"><p><b>Send this to the shop:</b> <code>10-embroidery-pack</code>, or the zip file <code>Atlenor-Embroidery-Pack.zip</code>. It has exact-size vector art for every placement, a four-page spec sheet and a README.</p><a class="btn" href="10-embroidery-pack/Atlenor-Embroidery-Spec.pdf">Open the spec sheet</a></div></section>
+
+<section id="environment"><p class="num">19 · Office, merch and signs</p><h2>Around the office</h2>
+<img class="shot" src="08-placement-mockups/lobby-wall-sign.png" alt="Lobby wall sign">
+<p class="sub" style="margin-top:8px">Lobby wall: brushed or polished stainless steel letters, standing off the wall about 1 inch, with a soft light behind the O.</p>
+<div class="grid g2" style="margin-top:14px">
+<figure><img class="shot" src="08-placement-mockups/merch-and-office.png" alt="Merch"><figcaption>Mug, notebook with debossed mark, sticker and tote</figcaption></figure>
+<figure><img class="shot" src="08-placement-mockups/vehicle-door.png" alt="Vehicle"><figcaption>Vehicle door: stacked logo in silver vinyl</figcaption></figure>
+</div></section>
+
+<section id="files"><p class="num">20 · Files</p><h2>What's in the kit</h2>
+<div class="card"><ul class="files">
+<li><code>01-logo/</code>: every finish (mirror chrome, straight chrome, pure chrome, gold, ice blue, one color), for dark and light backgrounds. The logo, stacked logo and mark as SVG and transparent PNG, plus small-size marks.</li>
+<li><code>02-real-light-images/</code>: the signature images for the website hero, phone, link preview and mark, plus pure versions.</li>
+<li><code>03-star-breakthrough-effect/</code>: the breakthrough stills, vector marks, logo intro video (MP4), GIF and poster.</li>
+<li><code>04-app-and-icons/</code>: iOS and Android icon sets, adaptive and maskable icons, launch screens, favicons, the web manifest and an HTML snippet.</li>
+<li><code>05-color/</code>: color codes as CSS, JSON and text with RGB and CMYK, plus a palette image.</li>
+<li><code>06-type/</code>: font names, links and the type scale.</li>
+<li><code>07-templates/</code>: social banners and posts, video-call background, slide backgrounds, print-ready business card and letterhead PDFs, and the email signature.</li>
+<li><code>08-placement-mockups/</code> and <code>09-apparel-mockups/</code>: every mock-up in this guide, full size.</li>
+<li><code>10-embroidery-pack/</code>: everything an embroidery shop needs. Also zipped as <code>Atlenor-Embroidery-Pack.zip</code>.</li>
+</ul></div>
+<p class="foot">Atlenor™ brand guide, version 1, November 2026. All light effects were generated for Atlenor. Mock-ups are drawings that show placement, not photos of real products. Have the logo reviewed by trademark counsel before filing or large print runs.</p>
+</section>
+</main></body></html>
