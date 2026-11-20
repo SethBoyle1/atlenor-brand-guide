@@ -5,7 +5,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
-:root{--bg:#04070f;--panel:#070d1c;--card:#0b1322;--line:#18233a;--text:#e9eef8;--mute:#93a2bc;--soft:#c6d0e2;--silver:#c3cddb;--ice:#9cc4ff;--gold:#f2d27a;--bad:#f0997b;--good:#5dcaa5}
+:root{--bg:#000000;--panel:#0a0a0c;--card:#111216;--line:#1f2126;--text:#e9eef8;--mute:#93a2bc;--soft:#c6d0e2;--silver:#c3cddb;--ice:#8ec9f2;--gold:#8ec9f2;--bad:#f0997b;--good:#5dcaa5}
 *{box-sizing:border-box}html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
 body{margin:0;background:var(--bg);color:var(--text);font:16px/1.6 Geist,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;-webkit-font-smoothing:antialiased}
 img,video{display:block;max-width:100%;height:auto}
@@ -30,12 +30,12 @@ figure{margin:0;min-width:0}figcaption{font-size:13px;color:var(--mute);margin-t
 .card{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:22px}.card p{margin:0 0 8px;color:var(--soft);font-size:15px}.card ul{margin:0;padding-left:18px;color:var(--soft);font-size:15px}.card li{margin:5px 0}
 .story{background:linear-gradient(120deg,#101a30,#070d1c);border:1px solid #223150;border-radius:16px;padding:30px}.story .q{font-size:clamp(21px,2.8vw,30px);line-height:1.3;margin:0 0 20px;font-weight:500}
 .pill{display:inline-block;font-size:11px;letter-spacing:.08em;text-transform:uppercase;border:1px solid #2a3a5c;color:var(--silver);border-radius:999px;padding:2px 10px;margin-bottom:8px}
-.pill.main{background:#e9eef8;color:#04070f;border-color:#e9eef8}
+.pill.main{background:#e9eef8;color:#000000;border-color:#e9eef8}
 .anat{position:relative;border:1px solid var(--line);border-radius:16px;background:var(--bg);padding:56px 40px 70px}.anat img{width:100%}
 .anat .lb{position:absolute;font-size:12px;color:var(--ice);font-family:"Geist Mono",monospace;white-space:nowrap}.anat .lb::before{content:"";position:absolute;left:50%;width:1px;background:#4c86ff}
 .anat .t{top:14px}.anat .t::before{top:20px;height:28px}.anat .b{bottom:14px}.anat .b::before{bottom:20px;height:30px}
 .space{border:1px solid var(--line);border-radius:14px;padding:44px;background:var(--bg);display:flex;align-items:center}.space .zone{flex:1;position:relative;border:1px dashed #4c86ff;padding:7.5%}.space .zone::before{content:"½ O";position:absolute;top:4px;left:8px;font:12px "Geist Mono",monospace;color:#7fa6ff}
-.dont{position:relative}.dont .tb{background:var(--bg)}.dont .x{position:absolute;top:10px;right:10px;width:26px;height:26px;border-radius:50%;background:var(--bad);color:#04070f;display:grid;place-items:center;font-weight:700;font-size:15px}
+.dont{position:relative}.dont .tb{background:var(--bg)}.dont .x{position:absolute;top:10px;right:10px;width:26px;height:26px;border-radius:50%;background:var(--bad);color:#000000;display:grid;place-items:center;font-weight:700;font-size:15px}
 .sw{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:12px}.chip{border:1px solid var(--line);border-radius:12px;overflow:hidden;background:var(--panel)}.chip i{display:block;height:92px}.chip div{padding:12px 14px;font-size:14px}.chip b{display:block;font-weight:600}.chip span{color:var(--mute);font-size:12.5px;display:block}
 .chromebar{height:92px;background:linear-gradient(180deg,#ffffff,#e3eaf5 20%,#8d9bb2 43%,#283247 49.5%,#141a27 50.5%,#5d7398 56%,#c7d6ee 80%,#f6f9ff)}
 .ratio{display:flex;height:22px;border-radius:999px;overflow:hidden;border:1px solid var(--line)}.ratio i{display:block}
@@ -45,7 +45,7 @@ table.t{width:100%;border-collapse:collapse;background:var(--panel);border:1px s
 .video{border-radius:16px;overflow:hidden;border:1px solid var(--line);background:#000}
 .files li{margin:8px 0;color:var(--soft)}.files{padding-left:18px}
 .callout{border:1px solid #2a3a5c;background:linear-gradient(120deg,#0d1730,#070d1c);border-radius:14px;padding:22px 24px;display:flex;gap:18px;align-items:center;justify-content:space-between;flex-wrap:wrap}.callout p{margin:0;color:var(--soft)}
-.btn{display:inline-block;background:#e9eef8;color:#04070f;border-radius:999px;padding:9px 18px;font-size:14px;font-weight:600;text-decoration:none;white-space:nowrap}
+.btn{display:inline-block;background:#e9eef8;color:#000000;border-radius:999px;padding:9px 18px;font-size:14px;font-weight:600;text-decoration:none;white-space:nowrap}
 .foot{margin-top:56px;color:var(--mute);font-size:13px;border-top:1px solid var(--line);padding-top:20px}
 @media (max-width:1000px){.g5{grid-template-columns:repeat(3,minmax(0,1fr))}.sw{grid-template-columns:repeat(3,minmax(0,1fr))}}
 @media (max-width:900px){.grid,.g4{grid-template-columns:repeat(2,minmax(0,1fr))}.type{grid-template-columns:minmax(0,1fr)}.toc{grid-template-columns:repeat(2,minmax(0,1fr))}}
@@ -109,13 +109,12 @@ figure,.card,.icons,table,.story,.anat,.space,.callout,.chip,.tb,.shot,.grid>div
 <figure><div class="tb"><img src="01-logo/mirror-chrome/atlenor-logo-all-chrome-on-dark.svg" alt="Mirror chrome"></div><figcaption><span class="pill main">Main</span><br><b>Mirror chrome.</b> Website, app, decks, video and signs.</figcaption></figure>
 <figure><div class="tb"><img src="01-logo/straight-chrome/atlenor-logo-straight-chrome-on-dark.svg" alt="Straight chrome"></div><figcaption><span class="pill">Option</span><br><b>Straight chrome.</b> Softer silver with no dark bands. Good at small sizes.</figcaption></figure>
 <figure><div class="tb"><img src="01-logo/pure-chrome/atlenor-logo-pure-chrome-on-dark.svg" alt="Pure chrome"></div><figcaption><span class="pill">Option</span><br><b>Pure chrome.</b> Only silver, white and black, with no blue.</figcaption></figure>
-<figure><div class="tb"><img src="01-logo/gold/atlenor-logo-gold-on-dark.svg" alt="Gold"></div><figcaption><span class="pill">Accent</span><br><b>Gold ring.</b> Premium print, awards, invitations, gifts.</figcaption></figure>
-<figure><div class="tb"><img src="01-logo/ice-blue/atlenor-logo-ice-on-dark.svg" alt="Ice"></div><figcaption><span class="pill">Product</span><br><b>Ice ring.</b> Inside the dashboards, next to live data.</figcaption></figure>
+<figure><div class="tb"><img src="01-logo/baby-blue/atlenor-logo-ice-on-dark.svg" alt="Baby blue"></div><figcaption><span class="pill">Accent</span><br><b>Baby blue ring.</b> Inside the dashboards and app, next to live data.</figcaption></figure>
 <figure><div class="tb"><img src="01-logo/one-color-black-and-white/atlenor-logo-one-color-white.svg" alt="One color white"></div><figcaption><span class="pill">Utility</span><br><b>One color.</b> White or black for embroidery, engraving, stamps, faxes and forms.</figcaption></figure>
 </div>
 <div class="grid" style="margin-top:14px">
 <figure class="lt"><div class="tb"><img src="01-logo/mirror-chrome/atlenor-logo-all-chrome-on-light.svg" alt="Mirror chrome on white"></div><figcaption>Mirror chrome on white: email, letters, documents</figcaption></figure>
-<figure class="lt"><div class="tb"><img src="01-logo/gold/atlenor-logo-gold-on-light.svg" alt="Deep gold on white"></div><figcaption>Deep gold on white</figcaption></figure>
+<figure class="lt"><div class="tb"><img src="01-logo/baby-blue/atlenor-logo-ice-on-light.svg" alt="Deep blue on white"></div><figcaption>Deep blue ring on white</figcaption></figure>
 <figure class="lt"><div class="tb"><img src="01-logo/one-color-black-and-white/atlenor-logo-one-color-black.svg" alt="Black"></div><figcaption>One color, black</figcaption></figure>
 </div></section>
 
@@ -157,27 +156,26 @@ figure,.card,.icons,table,.story,.anat,.space,.callout,.chip,.tb,.shot,.grid>div
 <figure class="dont"><div class="tb"><img src="01-logo/mirror-chrome/atlenor-logo-all-chrome-on-dark.svg" alt="Recolored" style="filter:hue-rotate(110deg) saturate(6) sepia(.6)"></div><span class="x">×</span><figcaption>Recolor it</figcaption></figure>
 <figure class="dont"><div class="tb"><img src="01-logo/mirror-chrome/atlenor-logo-all-chrome-on-dark.svg" alt="Drop shadow" style="filter:drop-shadow(6px 6px 0 #f0997b)"></div><span class="x">×</span><figcaption>Add shadows, outlines or glows</figcaption></figure>
 <figure class="dont"><div class="tb" style="background:repeating-linear-gradient(45deg,#7b8aa6 0 18px,#c9a24a 18px 36px,#4b6b4f 36px 54px)"><img src="01-logo/mirror-chrome/atlenor-logo-all-chrome-on-dark.svg" alt="Busy background"></div><span class="x">×</span><figcaption>Place it on busy backgrounds</figcaption></figure>
-<figure class="dont lt"><div class="tb"><img src="01-logo/gold/atlenor-logo-gold-on-dark.svg" alt="Bright gold on white"></div><span class="x">×</span><figcaption>Use the dark-background version on white</figcaption></figure>
+<figure class="dont lt"><div class="tb"><img src="01-logo/baby-blue/atlenor-logo-ice-on-dark.svg" alt="Bright baby blue on white"></div><span class="x">×</span><figcaption>Use the dark-background version on white</figcaption></figure>
 <figure class="dont"><div class="tb"><div style="font:600 46px/1 Geist,sans-serif;letter-spacing:.1em;color:#e9eef8">ATLENOR</div></div><span class="x">×</span><figcaption>Retype the name in a font</figcaption></figure>
 <figure class="dont"><div class="tb"><div style="display:flex;gap:18px;align-items:center;width:100%"><img src="01-logo/mirror-chrome/atlenor-mark-all-chrome-on-dark.svg" alt="" style="width:22%;height:auto"><img src="01-logo/mirror-chrome/atlenor-logo-all-chrome-on-dark.svg" alt="Mark beside logo" style="width:70%;height:auto"></div></div><span class="x">×</span><figcaption>Put the mark beside the logo; the O already is the mark</figcaption></figure>
 </div></section>
 
-<section id="color"><p class="num">10 · Color</p><h2>Night and chrome</h2><p class="sub">Night navy is the base of everything. Chrome is the signature. Ice and gold are accents, used sparingly.</p>
+<section id="color"><p class="num">10 · Color</p><h2>Black, chrome and baby blue</h2><p class="sub">Black is the base of everything. Chrome is the signature. Baby blue is the one accent, used sparingly, like the starlight in the O.</p>
 <div class="sw">
-<div class="chip"><i style="background:#04070f;border-bottom:1px solid #18233a"></i><div><b>Night navy</b><span class="mono">#04070F</span><span>RGB 4 7 15</span></div></div>
+<div class="chip"><i style="background:#000000;border-bottom:1px solid #1f2126"></i><div><b>Black</b><span class="mono">#000000</span><span>RGB 0 0 0</span></div></div>
 <div class="chip"><i class="chromebar"></i><div><b>Mirror chrome</b><span class="mono">gradient</span><span>#FFFFFF → #283247 → #F6F9FF</span></div></div>
 <div class="chip"><i style="background:#e9eef8"></i><div><b>Text white</b><span class="mono">#E9EEF8</span><span>RGB 233 238 248</span></div></div>
-<div class="chip"><i style="background:#9cc4ff"></i><div><b>Ice</b><span class="mono">#9CC4FF</span><span>RGB 156 196 255</span></div></div>
-<div class="chip"><i style="background:#f2d27a"></i><div><b>Gold</b><span class="mono">#F2D27A</span><span>Deep gold #A87C16 on white</span></div></div>
-<div class="chip"><i style="background:#070d1c"></i><div><b>Panel</b><span class="mono">#070D1C</span></div></div>
-<div class="chip"><i style="background:#0b1322"></i><div><b>Card</b><span class="mono">#0B1322</span></div></div>
+<div class="chip"><i style="background:#8ec9f2"></i><div><b>Baby blue</b><span class="mono">#8EC9F2</span><span>RGB 142 201 242 · deep #2F7FC4 on white</span></div></div>
+<div class="chip"><i style="background:#0a0a0c;border-bottom:1px solid #1f2126"></i><div><b>Panel</b><span class="mono">#0A0A0C</span></div></div>
+<div class="chip"><i style="background:#111216"></i><div><b>Card</b><span class="mono">#111216</span></div></div>
 <div class="chip"><i style="background:#93a2bc"></i><div><b>Muted text</b><span class="mono">#93A2BC</span></div></div>
-<div class="chip"><i style="background:#4c86ff"></i><div><b>Signal blue</b><span class="mono">#4C86FF</span><span>Links and focus</span></div></div>
+<div class="chip"><i style="background:#4c86ff"></i><div><b>Signal blue</b><span class="mono">#4C86FF</span><span>Links and focus in apps</span></div></div>
 <div class="chip"><i style="background:linear-gradient(90deg,#5dcaa5 50%,#f0997b 50%)"></i><div><b>Status</b><span class="mono">#5DCAA5 · #F0997B</span><span>Dashboards only</span></div></div>
 </div>
 <div class="grid g2" style="margin-top:14px">
-<div class="card"><h3>Ratio</h3><div class="ratio"><i style="width:80%;background:#04070f"></i><i style="width:15%;background:linear-gradient(180deg,#fff,#8d9bb2,#283247,#c7d6ee)"></i><i style="width:3%;background:#9cc4ff"></i><i style="width:2%;background:#f2d27a"></i></div><p style="margin-top:10px">About 80% night navy, 15% chrome and text, and 5% ice or gold. The darkness is what makes the chrome shine.</p></div>
-<div class="card"><h3>In print</h3><p>Chrome on paper is best as metallic silver ink or foil, close to Pantone 877 C. Night navy is close to Pantone Black 6 C. Confirm both with the printer. Color codes for print, web and code are in <code>05-color/</code>.</p></div>
+<div class="card"><h3>Ratio</h3><div class="ratio"><i style="width:85%;background:#000000;outline:1px solid #1f2126"></i><i style="width:12%;background:linear-gradient(180deg,#fff,#8d9bb2,#283247,#c7d6ee)"></i><i style="width:3%;background:#8ec9f2"></i></div><p style="margin-top:10px">About 85% black, 12% chrome and text, and 3% baby blue. The darkness is what makes the chrome shine. No gold: warm gold fights the cool chrome.</p></div>
+<div class="card"><h3>In print</h3><p>Chrome on paper is best as metallic silver ink or foil, close to Pantone 877 C. Print black as rich black (C60 M40 Y40 K100) or Pantone Black 6 C. Baby blue is close to Pantone 2905 C. Confirm all three with the printer. Color codes for print, web and code are in <code>05-color/</code>.</p></div>
 </div></section>
 
 <section id="type"><p class="num">11 · Type</p><h2>Geist and Geist Mono</h2>
@@ -188,7 +186,7 @@ figure,.card,.icons,table,.story,.anat,.space,.callout,.chip,.tb,.shot,.grid>div
 
 <section id="imagery"><p class="num">12 · Imagery</p><h2>One star, one light source</h2>
 <div class="grid">
-<div class="card"><h3>Do</h3><ul><li>One star per image, in the O.</li><li>Deep navy space and fine star dust.</li><li>Real screenshots of the product, on navy.</li><li>Real photos of real customers and staff, with permission.</li></ul></div>
+<div class="card"><h3>Do</h3><ul><li>One star per image, in the O.</li><li>Black space and fine star dust.</li><li>Real screenshots of the product, on black.</li><li>Real photos of real customers and staff, with permission.</li></ul></div>
 <div class="card"><h3>Don't</h3><ul><li>Extra stars, lens flares, planets or galaxies.</li><li>Mythological figures, globes on shoulders or religious imagery.</li><li>AI images made to look like real places or people.</li><li>Stock photos of handshakes and people pointing at screens.</li></ul></div>
 <div class="card"><h3>Every star is ours</h3><p>All starlight and light effects in this kit were generated for Atlenor. Don't add stock light effects.</p></div>
 </div></section>
@@ -245,25 +243,25 @@ figure,.card,.icons,table,.story,.anat,.space,.callout,.chip,.tb,.shot,.grid>div
 
 <section id="apparel"><p class="num">17 · Apparel</p><h2>On clothing</h2><p class="sub">Dark garments, white letters, and a metallic silver O. Keep it understated: a left-chest logo or a small mark looks more premium than a giant chest print.</p>
 <div class="grid">
-<figure><img class="shot" src="09-apparel-mockups/polo-navy.png" alt="Navy polo"><figcaption><b>Polo, navy.</b> Left chest, 3.5 in, two threads.</figcaption></figure>
+<figure><img class="shot" src="09-apparel-mockups/polo-black.png" alt="Black polo"><figcaption><b>Polo, black.</b> Left chest, 3.5 in, two threads.</figcaption></figure>
 <figure><img class="shot" src="09-apparel-mockups/quarter-zip-charcoal.png" alt="Quarter-zip"><figcaption><b>Quarter-zip, charcoal.</b> Left chest, 3.5 in.</figcaption></figure>
 <figure><img class="shot" src="09-apparel-mockups/hoodie-black-center.png" alt="Hoodie"><figcaption><b>Hoodie, black.</b> Center chest, 9 in.</figcaption></figure>
-<figure><img class="shot" src="09-apparel-mockups/tee-navy-left-chest.png" alt="Tee left chest"><figcaption><b>Tee, navy.</b> Left chest, 3.5 in.</figcaption></figure>
-<figure><img class="shot" src="09-apparel-mockups/tee-navy-back.png" alt="Tee back"><figcaption><b>Tee, back.</b> Stacked logo, 10 in.</figcaption></figure>
+<figure><img class="shot" src="09-apparel-mockups/tee-black-left-chest.png" alt="Tee left chest"><figcaption><b>Tee, black.</b> Left chest, 3.5 in.</figcaption></figure>
+<figure><img class="shot" src="09-apparel-mockups/tee-black-back.png" alt="Tee back"><figcaption><b>Tee, back.</b> Stacked logo, 10 in.</figcaption></figure>
 <figure><img class="shot" src="09-apparel-mockups/tee-black-center-chest.png" alt="Tee center"><figcaption><b>Tee, black.</b> Center chest print, 10 in.</figcaption></figure>
-<figure><img class="shot" src="09-apparel-mockups/cap-navy-logo.png" alt="Cap logo"><figcaption><b>Cap, navy.</b> Front logo, 4.25 in.</figcaption></figure>
+<figure><img class="shot" src="09-apparel-mockups/cap-black-logo.png" alt="Cap logo"><figcaption><b>Cap, black.</b> Front logo, 4.25 in.</figcaption></figure>
 <figure><img class="shot" src="09-apparel-mockups/cap-black-mark.png" alt="Cap mark"><figcaption><b>Cap, black.</b> Front mark, 1.9 in.</figcaption></figure>
-<figure><img class="shot" src="09-apparel-mockups/cap-white-logo.png" alt="Cap white"><figcaption><b>Cap, white with navy brim.</b> Navy thread.</figcaption></figure>
+<figure><img class="shot" src="09-apparel-mockups/cap-white-logo.png" alt="Cap white"><figcaption><b>Cap, white with black brim.</b> Black thread.</figcaption></figure>
 <figure><img class="shot" src="09-apparel-mockups/beanie-black.png" alt="Beanie"><figcaption><b>Beanie, black.</b> Cuff logo, 3 in.</figcaption></figure>
-<figure><img class="shot" src="09-apparel-mockups/polo-white.png" alt="White polo"><figcaption><b>Polo, white.</b> Navy thread, left chest.</figcaption></figure>
-<figure><img class="shot" src="09-apparel-mockups/hoodie-heather-left-chest.png" alt="Heather hoodie"><figcaption><b>Hoodie, heather grey.</b> Navy thread, left chest.</figcaption></figure>
+<figure><img class="shot" src="09-apparel-mockups/polo-white.png" alt="White polo"><figcaption><b>Polo, white.</b> Black thread, left chest.</figcaption></figure>
+<figure><img class="shot" src="09-apparel-mockups/hoodie-heather-left-chest.png" alt="Heather hoodie"><figcaption><b>Hoodie, heather grey.</b> Black thread, left chest.</figcaption></figure>
 </div>
 <p class="sub" style="margin-top:12px">Garment drawings show placement only. Printed tees can use the white or one-color files. Never print the real-light chrome images on fabric.</p></section>
 
 <section id="embroidery"><p class="num">18 · Embroidery</p><h2>For the embroidery shop</h2>
 <img class="shot" src="09-apparel-mockups/embroidery-closeup.png" alt="Embroidery close-up">
 <div class="grid g2" style="margin-top:14px">
-<div class="card"><h3>Threads</h3><ul><li><b>A, letters:</b> white</li><li><b>B, ring and star:</b> metallic silver, close to Pantone 877 C</li><li><b>Light garments:</b> navy-black #04070F, close to Pantone Black 6 C</li><li>At 2 inches or smaller, use one thread.</li></ul></div>
+<div class="card"><h3>Threads</h3><ul><li><b>A, letters:</b> white</li><li><b>B, ring and star:</b> metallic silver, close to Pantone 877 C</li><li><b>Light garments:</b> black #000000, your standard black thread</li><li>At 2 inches or smaller, use one thread.</li></ul></div>
 <div class="card"><h3>Sizes</h3><ul><li>Left chest logo 3.5 in · mark 2 in</li><li>Center chest 9 in · full back 10 in</li><li>Cap front logo 4.25 in · mark 1.9 in</li><li>Sleeve, cap side, back of neck 1.25 in · beanie 3 in</li></ul></div>
 </div>
 <div class="callout" style="margin-top:14px"><p><b>Send this to the shop:</b> <code>10-embroidery-pack</code>, or the zip file <code>Atlenor-Embroidery-Pack.zip</code>. It has exact-size vector art for every placement, a four-page spec sheet and a README.</p><a class="btn" href="10-embroidery-pack/Atlenor-Embroidery-Spec.pdf">Open the spec sheet</a></div></section>
@@ -278,7 +276,7 @@ figure,.card,.icons,table,.story,.anat,.space,.callout,.chip,.tb,.shot,.grid>div
 
 <section id="files"><p class="num">20 · Files</p><h2>What's in the kit</h2>
 <div class="card"><ul class="files">
-<li><code>01-logo/</code>: every finish (mirror chrome, straight chrome, pure chrome, gold, ice blue, one color), for dark and light backgrounds. The logo, stacked logo and mark as SVG and transparent PNG, plus small-size marks.</li>
+<li><code>01-logo/</code>: every finish (mirror chrome, straight chrome, pure chrome, baby blue, one color), for dark and light backgrounds. The logo, stacked logo and mark as SVG and transparent PNG, plus small-size marks.</li>
 <li><code>02-real-light-images/</code>: the signature images for the website hero, phone, link preview and mark, plus pure versions.</li>
 <li><code>03-star-breakthrough-effect/</code>: the breakthrough stills, vector marks, logo intro video (MP4), GIF and poster.</li>
 <li><code>04-app-and-icons/</code>: iOS and Android icon sets, adaptive and maskable icons, launch screens, favicons, the web manifest and an HTML snippet.</li>
